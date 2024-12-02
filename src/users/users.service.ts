@@ -12,7 +12,8 @@ export class UsersService {
     ) {}
 
     async findAllUsers(): Promise<Users[]> {
-        return this.usersRepository.find()
+        const users = await this.usersRepository.find()
+        return users;
     }
 
     async createUser(userDTO: UsersDto): Promise<UsersDto> {
