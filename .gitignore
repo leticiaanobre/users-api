@@ -2,6 +2,8 @@
 /dist
 /node_modules
 /build
+postgres-data/
+create_database.sql
 
 # Logs
 logs
